@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Header from "@/components/Header";
+import { montserrat } from "@/lib/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Jeels dev",
@@ -26,9 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.className} antialiased`}
       >
-        {children}
+        <div className="container md:max-w-[50rem] w-full mx-auto max-w-none antialiased mb-10">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
