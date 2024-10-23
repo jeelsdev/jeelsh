@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
       <div className="min-h-screen">
-        <main className="flex flex-col gap-8 items-center justify-center">
+        <main>
           <HomePage />
         </main>
         <footer className="flex gap-6 flex-wrap items-center justify-center">
