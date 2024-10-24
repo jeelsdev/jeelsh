@@ -1,11 +1,22 @@
 import Github from "@/components/Avatars/Github";
+import Linkedin from "@/components/Avatars/Linkedin";
 import Mail from "@/components/Avatars/Mail";
+import Theme from "@/components/Avatars/Theme";
+import Link from "next/link";
 
 const AvatarSocials = () => {
     return (
         <div className="flex justify-around items-center gap-3">
-            <Github />
-            <Mail />
+            <Link href="/" className="border-2 border-gray-700 p-2 rounded-md hover:bg-gray-700">
+                <Mail />
+            </Link>
+            <Link href="/" className="border-2 border-gray-700 p-2 rounded-md hover:bg-gray-700">
+                <Linkedin />
+            </Link>
+            <Link href="/" className="border-2 border-gray-700 p-2 rounded-md hover:bg-gray-700">
+                <Github />
+            </Link>
+            <Theme />
         </div>
     );
 }
