@@ -1,7 +1,7 @@
 import Github from "@/components/Avatars/Github";
 import Linkedin from "@/components/Avatars/Linkedin";
 import Mail from "@/components/Avatars/Mail";
-import Theme from "@/components/Avatars/Theme";
+import DarkMode from "@/components/Buttons/DarkMode";
 import Link from "next/link";
 
 const AvatarSocials = () => {
@@ -16,7 +16,7 @@ const AvatarSocials = () => {
             <Link href="/" className="border-2 border-gray-700 p-2 rounded-md hover:bg-gray-700">
                 <Github />
             </Link>
-            <Theme />
+            <DarkMode />
         </div>
     );
 }
