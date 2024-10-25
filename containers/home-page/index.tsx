@@ -10,14 +10,14 @@ const HomePage = () => {
                     <Logo src="https://avatars.githubusercontent.com/u/130939421?v=4" alt="Jeelsh" />
                     <div className="font-medium dark:text-white ml-4">
                         <div>Jeels</div>
-                        <div className="text-sm text-gray-500 dark:text-gray-400">Joined in August 2014</div>
+                        <div className="text-sm text-gray-500 dark:text-gray-400">Desarrollador Web</div>
                     </div>
                 </div>
                 <AvatarSocials />
             </div>
 
             <About />
-            
+
         </>
     );
 }
