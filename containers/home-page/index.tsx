@@ -1,6 +1,7 @@
 import Logo from "@/components/Logo/logo";
 import AvatarSocials from "./section-avatar-social";
 import About from "./section-about";
+import Skills from "./section-skills";
 
 const HomePage = () => {
     return (
@@ -17,6 +18,8 @@ const HomePage = () => {
             </div>
 
             <About />
+
+            <Skills />
 
         </>
     );

@@ -18,5 +18,20 @@ export const Data: Welcomes = {
         "สวัสดี",
         "Chào",
         "Salut",
+    ],
+    Skills: [
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Bootstrap",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "PostgreSQL",
+        "GIT",
     ]
 }
