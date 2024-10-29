@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Theme from "../Avatars/Theme";
 
-const DarkMode = () => {
+const DarkMode = ({ cls }: { cls : string }) => {
     const [activeTheme, setActiveTheme] = useState("system");
     
     useEffect(() => {
@@ -53,7 +53,7 @@ const DarkMode = () => {
 
     return (
         <button
-            className="dark-mode border-2 border-gray-700 p-2 rounded-md hover:bg-gray-700"
+            className={`dark-mode ${cls}`}
             onClick={() => handleThemeChange(activeTheme === "dark" ? "light" : "dark")}
         >
             <Theme />
