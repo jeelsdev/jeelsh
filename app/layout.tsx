@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} antialiased`}
       >
-        <div className="container md:max-w-[50rem] w-full mx-auto max-w-none antialiased mb-10">
+        <div className="container md:max-w-[50rem] w-full mx-auto max-w-none antialiased mb-10 px-5 md:px-10 lg:px-0">
           <Header />
           {children}
         </div>
