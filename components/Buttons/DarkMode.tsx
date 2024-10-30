@@ -49,6 +49,7 @@ const DarkMode = ({ cls }: { cls : string }) => {
             document.documentElement.classList.remove("dark");
             localStorage.setItem("theme", "light");
         }
+        setActiveTheme(newTheme);
     }
 
     return (
